@@ -101,25 +101,7 @@
   .hero-ring-2 { width: 750px; height: 750px; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0.25; }
   .hero-ring-3 { width: 1000px; height: 1000px; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0.12; }
 
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--accent-soft);
-    border: 1px solid rgba(196,67,42,0.18);
-    color: var(--accent);
-    padding: 6px 16px;
-    border-radius: 100px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    animation: fadeUp 0.7s ease both;
-  }
-
-  .blink { animation: blink 1.2s step-end infinite; }
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  /* Suppression du hero-badge */
 
   .hero h1 {
     font-family: 'DM Serif Display', serif;
@@ -724,9 +706,6 @@
   <div class="hero-ring hero-ring-2"></div>
   <div class="hero-ring hero-ring-3"></div>
   <div>
-    <div class="hero-badge">
-      <span class="blink">●</span> VOUS VOUS ETES FAITS AVOIR😂, C'ETAIT DU PHISHING
-    </div>
     <h1>
       Ingénierie<br>
       <em>Sociale</em> &<br>
@@ -1160,7 +1139,6 @@
       </div>
 
       <div style="display:flex; flex-direction:column; gap:20px;">
-        <!-- Remplacé : bloc "Contacts d'urgence" par une procédure interne -->
         <div style="background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:36px;">
           <div style="font-family:'DM Mono',monospace; font-size:0.65rem; color:var(--ink-light); letter-spacing:3px; text-transform:uppercase; margin-bottom:24px;">Conduite à tenir</div>
           <div style="display:flex; flex-direction:column; gap:0; border-top:1px solid var(--border);">
